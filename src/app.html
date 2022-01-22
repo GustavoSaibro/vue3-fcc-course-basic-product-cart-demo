@@ -107,7 +107,7 @@
                     <label>Quantity:</label>
                   </div>
                   <div class="cell">
-                    <input type="number" value="0">
+                    <input type="number" v-model="">
                   </div>
                 </div>
               </form>
@@ -163,7 +163,21 @@
       </footer>
 
     </div>
-      
+    <script src="https://unpkg.com/vue@next"></script>      
+
+    <script>
+      let app = Vue.createApp({
+        data(){
+          return {
+            inventory:{
+              carrots:0,
+              pineapples:0,
+              cherries:0,
+            }
+          }
+        }
+      });
     </script>
+       
   </body>
 </html>
